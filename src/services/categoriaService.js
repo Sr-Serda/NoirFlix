@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://api-filmes-ofc.vercel.app/categorias';
+const API_URL = 'https://api-filmes-cukex05lj-sr-serdas-projects.vercel.app/categorias';
 
 export const getCategorias = async () => {
   try {
