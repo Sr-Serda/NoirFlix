@@ -1,38 +1,91 @@
-.App {
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #141414, #2e2e2e);
+  color: #e5e5e5;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
   text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff6a00, #ff3e00);
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 10px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Menor tamanho dos cards */
+  gap: 20px; /* Ajustando o espaçamento entre os cards */
+  padding: 20px;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+  background-color: #1f1f1f;
+  border-radius: 12px; /* Borda um pouco mais suave */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+li:hover {
+  transform: scale(1.03); /* Um aumento um pouco menor */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  color: #fff;
+  font-size: 1.5rem; /* Reduzindo o tamanho do título */
+  margin: 15px;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  margin: 15px;
+  color: #b3b3b3;
+  font-size: 0.9rem; /* Reduzindo o tamanho do texto */
+  line-height: 1.6;
+}
+
+a {
+  color: #ff3e00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.filme-video {
+  width: 100%;
+  height: 180px; /* Reduzindo a altura do vídeo */
+  border: none;
+  border-radius: 12px;
+}
+
+.categoria-cor {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background-color: #ff3e00;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.filme-info {
+  padding: 15px;
 }
