@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://api-filmes-new.vercel.app//filmes';
+const API_URL = 'https://api-filmes-new.vercel.app/filmes';
 
 export const getFilmes = async () => {
   try {
